@@ -1,0 +1,88 @@
+
+body {
+    background-color: #63bee9;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+/* NAV BAR */
+nav {
+    background: #f1f1f1;
+    overflow: auto;
+}
+
+nav > div {
+    background: #f1f1f1;
+    display: inline;
+    cursor: pointer;
+    width: 16.65%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+    padding: 15px;
+    float: left;
+}
+
+nav > div.active {
+    background: #ccc;
+}
+
+.hidden {
+    display: none;
+}
+/* END OF NAV BAR */
+
+/* #1 HOME SCREEN */
+h1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home {
+    position:relative;
+}
+/* END OF HOME SCREEN */
+
+
+/* #2 FOOD SCREEN */
+
+/* END OF FOOD SCREEN */
+
+
+/* #3 FITNESS SCREEN */
+
+/* END OF FITNESS SCREEN */
+
+
+/* #4 SLEEP SCREEN */
+
+/* END OF SLEEP SCREEN */
+.content {
+    flex: 1 1 auto;
+}
+
+#dot {
+    height: 25px;
+    width: 25px;
+    background-color: #080807;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 35%;
+    margin-top: 3%;
+    display: block;
+    position:relative
+}
+
+#speaker {
+    height: 25px;
+    width: 60px;
+    background-color: #080807;
+    border-radius: 46px;
+    margin-left: auto;
+    margin-right: 45%;
+    margin-top: -7%;
+    display: block;
+    position:relative
+}

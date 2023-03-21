@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav style="flex: 0 1 auto;">
+        <div id="open-home"><img src="house-24.png" alt="Home"></div>
+        <div id="open-food"><img src="restaurant-3-24.png" alt="Food"></div>
+        <div id="open-fitness"><img src="dumbbell-24.png" alt="Fitness"></div>
+        <div id="open-sleep"><img src="bed-24.png" alt="Sleep"></div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="hidden content">
+        <h1 style="text-align: center;" >Welcome Back.</h1>
+        <p style="position:absolute;top:0;left:0;">Most recent meal...</p>
+        <p style="position:absolute;top:0;right:0;">Your last workout...</p>
+        <p style="position:absolute;bottom:0;left:0;">Last night's sleep...</p>
+        <p style="position:absolute;bottom:0;right:0;">Extra</p>
+    </div>
+
+    <!-- FOOD PAGE -->
+    <div id="food" class="hidden content" >
+        <h2 style="text-align: center;" >Hello!</h2>
+        <!-- <iframe src="food.html" style="flex-grow: 1; border: none; margin: 0; padding: 0;" title="Iframe Example"></iframe> -->
+        <!-- Code in the respective html file, uncomment above line once you finish, it should format correctly but there's probably stuff we need to workout -->
+    </div>
+
+    <!-- FITNESS PAGE -->
+    <div id="fitness" class="hidden">
+        <div>
+            <h2 style="text-align: center; margin: 30px;" >Hi!</h2>
+            <!-- <iframe src="fitness.html" style="flex-grow: 1; border: none; margin: 0; padding: 0;" title="Iframe Example"></iframe> -->
+            <!-- Code in the respective html file, uncomment above line once you finish, it should format correctly but there's probably stuff we need to workout -->
+        </div>
+    </div>
+
+    <!-- SLEEP PAGE -->
+    <div id="sleep" class="hidden">
+        <div>
+            <h2 style="text-align: center; margin: 30px;" >Sleep!</h2>
+            <!-- <iframe src="sleep.html" style="flex-grow: 1; border: none; margin: 0; padding: 0;" title="Iframe Example"></iframe> -->
+            <!-- Code in the respective html file, uncomment above line once you finish, it should format correctly but there's probably stuff we need to workout -->
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
