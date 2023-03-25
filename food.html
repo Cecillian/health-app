@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="foodpage">
+    <div class="left">
+        <form id="list-form">
+            <div class="mb">
+                <input type="date" required name="goal" id="list-input" placeholder="Enter date...">
+            </div>
+            <button type="submit">Add New</button>
+        </form>
+        <br/>
+        <div id="list"></div>
+    </div>
+    <div class="right">
+        <div class="right__title">✨MY GOALS✨</div>
+        <div id="goal-list"></div>
+        <br/>
+        <form id="goal-form">
+            <div class="mb">
+                <input type="text" required name="goal" id="goal-input" placeholder="Enter goal...">
+            </div>
+            <button type="submit">Add New</button>
+        </form>
+    </div>
+
+    <div class="modal d-none" id="add-item-modal">
+        <form id="add-form" class=" modal-body">
+            <h3 class="add-title">Add Item</h3>
+            <div class="mb">
+                <label>Time</label>
+                <input type="time" required name="Time">
+            </div>
+            <div class="mb">
+                <label>Name</label>
+                <input type="text" required name="Name">
+            </div>
+            <div class="mb">
+                <label>Serving Size</label>
+                <input type="number" min="0" required name="ServingSize">
+                <select name="ServingSizeUnit">
+                    <option>g</option>
+                    <option>mg</option>
+                    <option>l</option>
+                    <option>ml</option>
+                </select>
+            </div>
+            <div class="mb">
+                <label>Calories</label>
+                <input type="number" min="0" required name="Calories">
+            </div>
+            <div class="mb">
+                <label>Protein</label>
+                <input type="number" min="0" required name="Protein">
+                <select name="ProteinUnit">
+                    <option>g</option>
+                    <option>mg</option>
+                    <option>l</option>
+                    <option>ml</option>
+                </select>
+            </div>
+            <div class="mb">
+                <label>Fats</label>
+                <input type="number" min="0" required name="Fats">
+                <select name="FatsUnit">
+                    <option>g</option>
+                    <option>mg</option>
+                    <option>l</option>
+                    <option>ml</option>
+                </select>
+            </div>
+            <div class="mb">
+                <label>Sodium</label>
+                <input type="number" min="0" required name="Sodium">
+                <select name="SodiumUnit">
+                    <option>g</option>
+                    <option>mg</option>
+                    <option>l</option>
+                    <option>ml</option>
+                </select>
+            </div>
+            <div class="mb">
+                <label>Other</label>
+                <input type="text" min="0" name="Other">
+            </div>
+            <button>Submit</button>
+            <button type="button" class="cancel">Cancel</button>
+        </form>
+    </div>
+    <div class="scrollforolder">
+        <div>Scroll for<br/>older</div>
+        <div>⬇️</div>
+    </div>
+</div>
+<script src="food.js"></script>
+</body>
+</html>

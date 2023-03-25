@@ -29,7 +29,7 @@ nav > div.active {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 /* END OF NAV BAR */
 
@@ -47,7 +47,146 @@ h1 {
 
 
 /* #2 FOOD SCREEN */
+#food, .foodpage {
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
 
+#food {
+    padding: 0;
+}
+
+.left {
+    flex: 1.5;
+}
+
+.right {
+    flex: 1;
+}
+
+.right__title {
+    font-size: 14px;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    padding-bottom: 5px;
+    color: #fe2c55;
+}
+
+button {
+    color: #007aff;
+    background: white;
+    border: none;
+    box-shadow: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.mb {
+    margin-bottom: 10px;
+}
+
+.goal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.goal input {
+    margin-right: 5px;
+}
+
+.list-item {
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.list-title {
+    background: #fe2c55;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-meal {
+    margin-left: 10px;
+    border: 1px solid #fe2c55;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.delete {
+    padding: 2px 5px;
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+}
+
+.list-title .delete {
+    color: white !important;
+}
+
+.name {
+    flex: 1;
+}
+
+.list-add {
+    margin-left: 20px;
+}
+
+#add-form .mb {
+    display: flex;
+}
+
+#add-form label {
+    width: 80px;
+    margin-right: 10px;
+}
+
+#add-form input {
+    flex: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal-body {
+    background: white;
+    width: 80vw;
+    margin: 50px auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.d-none {
+    display: none;
+}
+
+.scrollforolder {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.more {
+    cursor: pointer;
+    padding: 6px;
+}
 /* END OF FOOD SCREEN */
 
 
