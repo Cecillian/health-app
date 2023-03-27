@@ -1,4 +1,3 @@
-
 body {
     background-color: #63bee9;
     margin: 0;
@@ -71,6 +70,14 @@ h1 {
     font-weight: bold;
     padding-bottom: 5px;
     color: #fe2c55;
+}
+
+.right__title_sleep {
+    font-size: 70px;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    padding-bottom: 5px;
+    color:darkviolet
 }
 
 button {

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="foodpage">
+    <div class="left">
+        <form id="list-form">
+            <div class="mb">
+                <input type="date" required name="goal" id="list-input" placeholder="Enter date...">
+            </div>
+            <button type="submit">Add New</button>
+        </form>
+        <br/>
+        <div id="list"></div>
+    </div>
+    <div class="right">
+        <div class="right__title_sleep">SLEEP GOALS</div>
+        <div id="goal-list"></div>
+        <br/>
+        <form id="goal-form">
+            <div class="mb">
+                <input type="text" required name="goal" id="goal-input" placeholder="Enter goal...">
+            </div>
+            <button type="submit">Add New</button>
+        </form>
+    </div>
+
+    <div class="modal d-none" id="add-item-modal">
+        <form id="add-form" class=" modal-body">
+            <h3 class="add-title">Add Item</h3>
+            <div class="mb">
+                <label>Sleep Time</label>
+                <input type="time" required name="Time">
+            </div>
+            <div class="mb">
+                <label>Wake up time</label>
+                <input type="time" required name="Time">
+            </div>
+            <div class="mb">
+                <label>Sleep Quality</label>
+                <select name="Yes or No">
+                    <option>Great!</option>
+                    <option>Good</option>
+                    <option>Meh</option>
+                    <option>Bad</option>
+                    <option>Awful</option>
+                </select>
+            </div>
+            <div class="mb">
+                <label>Woke up to alarm?</label>
+                <select name="Yes or No">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="mb">
+                <label>Additional Notes</label>
+                <input type="text" required name="Name">
+            </div>
+            <button>Submit</button>
+            <button type="button" class="cancel">Cancel</button>
+        </form>
+    </div>
+    <div class="scrollforolder">
+        <div>Scroll for<br/>older</div>
+        <div>⬇️</div>
+    </div>
+</div>
+<script src="food.js"></script>
+</body>
+</html>
