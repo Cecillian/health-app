@@ -41,6 +41,55 @@ h1 {
 
 #home {
     position:relative;
+    align-items: center;
+}
+
+.reminders {
+    border: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.reminders > button {
+    border: none;
+}
+
+.dailyRemind {
+    margin-left: 5%;
+}
+
+hr {
+    margin: 20px;
+    border-color: black;
+}
+
+.recent > img {
+    margin: 3px;
+    margin-left: 10px;
+}
+
+.recent > hr {
+    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: black;
+}
+
+.recent > p {
+    margin: 5px;
+}
+
+.food {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 /* END OF HOME SCREEN */
 
