@@ -281,3 +281,7 @@ button {
     display: block;
     position:relative
 }
+
+#recentFood {
+    padding-left: 50px;
+}
