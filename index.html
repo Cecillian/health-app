@@ -22,16 +22,16 @@
 
     <div style="display: flex;">
         <div class="reminders">
-            <button type="button" class="homeDaily">Daily Reminders<br><i style="color: grey; font-size: smaller;">Click to Expand</i></button>
+            <button type="button" class="homeDaily">Daily Reminders<br><i style="color: black; font-size: smaller;">Click to Expand</i></button>
             <div class="dailyRemind" style="display: none; overflow: hidden;">
                 <div id="goal-list"></div>
             </div>
         </div>
 
         <div class="reminders">
-            <button type="button" class="homeDaily">Weekly Reminders<br><i style="color: grey; font-size: smaller;">Click to Expand</i></button>
+            <button type="button" class="homeDaily">Weekly Reminders<br><i style="color: black; font-size: smaller;">Click to Expand</i></button>
             <div class="dailyRemind" style="display: none; overflow: hidden;">
-                <p>Get 70000 steps this week</p>
+                <p style="color: black;">Get 70000 steps this week</p>
             </div>
         </div>
     </div>
@@ -42,15 +42,17 @@
         <h2 style="text-align: center; align-items: center; flex-direction: column;
         justify-content: center;display: flex; margin: auto; margin-top: 4%; margin-bottom: 2%;" >Recent Activity</h2>
 
-        <img src="restaurant-3-24.png" alt="Food">
+        <img src="restaurant white.png" alt="Food">
         <p style="display: inline-block;">Your most recent meal...</p>
         <div id="recentFood"></div>
         <hr>
-        <img src="dumbbell-24.png" alt="Fitness">
+        <img src="dumbbell white.png" alt="Fitness">
         <p style="display: inline-block;">Your latest workout...</p>
+        <div id="recentFitness"></div>
         <hr>
-        <img src="bed-24.png" alt="Sleep">
+        <img src="bed white.png" alt="Sleep">
         <p style="display: inline-block;">Last night's sleep...</p>
+        <div id="recentSleep"></div>
 
     </div>
 </div>
@@ -62,20 +64,15 @@
 </div>
 
 <!-- FITNESS PAGE -->
-<div id="fitness" class="hidden">
-    <div>
-        <h2 style="text-align: center; margin: 30px;">Hi!</h2>
-        <!-- <iframe src="fitness.html" style="flex-grow: 1; border: none; margin: 0; padding: 0;" title="Iframe Example"></iframe> -->
-        <!-- Code in the respective html file, uncomment above line once you finish, it should format correctly but there's probably stuff we need to workout -->
-    </div>
+<div id="fitness" class="hidden content">
+    <iframe src="fitness.html" style="flex-grow: 1; border: none; margin: 0; padding: 0;" title="Iframe Example"></iframe>
+    <!-- Code in the respective html file, uncomment above line once you finish, it should format correctly but there's probably stuff we need to workout -->
 </div>
 
 <!-- SLEEP PAGE -->
-<div id="sleep" class="hidden">
-    <div>
-        <iframe src="sleep.html" style="flex-grow: 1; border: none; margin: 0; padding: 0;" title="Iframe Example"></iframe>
-        <!-- Code in the respective html file, uncomment above line once you finish, it should format correctly but there's probably stuff we need to workout -->
-    </div>
+<div id="sleep" class="hidden content">
+    <iframe src="sleep.html" style="flex-grow: 1; border: none; margin: 0; padding: 0;" title="Iframe Example"></iframe>
+    <!-- Code in the respective html file, uncomment above line once you finish, it should format correctly but there's probably stuff we need to workout -->
 </div>
 <script src="main.js"></script>
 <script src="home.js"></script>

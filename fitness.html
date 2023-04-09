@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="fitnesspage">
+    <div class="left">
+        <form id="list-form">
+            <div class="mb">
+                <input type="date" required name="goal" id="list-input">
+            </div>
+            <button type="submit">Add New Workout...</button>
+        </form>
+        <br>
+        <div id="list"></div>
+    </div>
+    <div class="right">
+        <div class="right__title">FITNESS GOALS</div>
+        <div id="goal-list"></div>
+        <br>
+        <form id="goal-form">
+            <div class="mb">
+                <input type="text" required name="goal" id="goal-input" placeholder="Enter goal...">
+            </div>
+            <button type="submit">Add New</button>
+        </form>
+    </div>
+​
+    <div class="modal d-none" id="add-item-modal">
+        <form id="add-form" class=" modal-body">
+            <h3 class="add-title">Add Item</h3>
+            <div class="mb">
+                <label>Time Started:</label>
+                <input type="time" required name="Time">
+            </div>
+            <div class="mb">
+                <label>Workout:</label>
+                <input type="text" required name="Name">
+            </div>
+            <div class="mb">
+                <label>Exercises:</label>
+                <input type="text" min="0" required name="ServingSize">
+            </div>
+            <div class="mb">
+                <label>Time Elapsed:</label>
+                <input type="number" name="other"></input><span style="margin-left:-40px; margin-top: 10px;">hours</span>
+            </div>
+            <button>Update</button>
+            <button type="button" class="cancel">Cancel</button>
+        </form>
+    </div>
+​
+    <div class="scrollforolder">
+        <div>Scroll for<br>older</div>
+        <div>⬇️</div>
+    </div>
+</div>
+​
+<script src="food.js"></script>
+​
+</body>
+</html>

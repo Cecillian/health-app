@@ -1,5 +1,5 @@
 body {
-    background-color: #63bee9;
+    background-color: #3298c7;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -21,6 +21,7 @@ nav > div {
     text-align: center; /* If you want the text to be centered */
     padding: 15px;
     float: left;
+    
 }
 
 nav > div.active {
@@ -40,7 +41,13 @@ h1 {
 }
 
 #home {
-    position:relative;
+    position: absolute;
+    bottom: 0px;
+    top: 50px;
+    left: 8px;
+    right: 0px;
+    overflow-y: scroll;
+    color: #f1f1f1;
     align-items: center;
 }
 
@@ -58,6 +65,7 @@ h1 {
 }
 
 .reminders > button {
+    color: black;
     border: none;
 }
 
@@ -67,7 +75,7 @@ h1 {
 
 hr {
     margin: 20px;
-    border-color: black;
+    border-color: #f1f1f1;
 }
 
 .recent > img {
@@ -79,7 +87,7 @@ hr {
     margin: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-color: black;
+    border-color: #f1f1f1;
 }
 
 .recent > p {
@@ -90,6 +98,22 @@ hr {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+#recentFood {
+    padding-left: 50px;
+}
+
+#recentFitness {
+    padding-left: 50px;
+}
+
+#recentSleep {
+    padding-left: 50px;
+}
+
+#goal-list {
+    color: black;
 }
 /* END OF HOME SCREEN */
 
@@ -114,11 +138,11 @@ hr {
 }
 
 .right__title {
-    font-size: 14px;
+    font-size: 17px;
     border-bottom: 2px solid black;
     font-weight: bold;
     padding-bottom: 5px;
-    color: #fe2c55;
+    color: #f1f1f1;
 }
 
 .right__title_sleep {
@@ -131,7 +155,7 @@ hr {
 
 button {
     color: #007aff;
-    background: white;
+    background: f1f1f1;
     border: none;
     box-shadow: none;
     padding: 5px 10px;
@@ -143,6 +167,7 @@ button {
 }
 
 .goal {
+    font-size: 17px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -159,7 +184,7 @@ button {
 
 .list-title {
     background: #fe2c55;
-    color: white;
+    color: #f1f1f1;
     font-size: 14px;
     font-weight: bold;
     padding: 5px 10px;
@@ -175,7 +200,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: #f1f1f1;
 }
 
 .delete {
@@ -186,7 +211,7 @@ button {
 }
 
 .list-title .delete {
-    color: white !important;
+    color: #f1f1f1 !important;
 }
 
 .name {
@@ -220,7 +245,7 @@ button {
 }
 
 .modal-body {
-    background: white;
+    background: #f1f1f1;
     width: 80vw;
     margin: 50px auto;
     border-radius: 20px;
@@ -236,7 +261,8 @@ button {
     bottom: 10px;
     right: 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
+    color: #f1f1f1;
 }
 
 .more {
@@ -247,15 +273,32 @@ button {
 
 
 /* #3 FITNESS SCREEN */
+#fitness, .fitnesspage {
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
 
+#fitness {
+    padding: 0;
+}
 /* END OF FITNESS SCREEN */
-
 
 /* #4 SLEEP SCREEN */
 
 /* END OF SLEEP SCREEN */
 .content {
     flex: 1 1 auto;
+}
+
+#sleep, .sleeppage {
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+
+#sleep {
+    padding: 0;
 }
 
 #dot {
@@ -282,6 +325,3 @@ button {
     position:relative
 }
 
-#recentFood {
-    padding-left: 50px;
-}

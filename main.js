@@ -8,6 +8,20 @@ function formatTime (time) {
   return `${hh}: ${mm} AM`;
 }
 
+function findLatestGoal () {
+  let goalStore = localStorage.getItem('store');
+  var temp = [];
+  if (goalStore) {
+    goalStore = JSON.parse(goalStore);
+    if (goalStore.goals) {
+      for (let goal of goalStore.goals) {
+        temp.push(goal)
+      }
+      return temp; 
+    }
+  }
+}
+
 function findLatestMeal () {
   let foodStore = localStorage.getItem('store');
   if (foodStore) {
@@ -27,6 +41,14 @@ function findLatestMeal () {
   }
 }
 
+function findLatestWorkout () {
+
+}
+
+function findLatestSleep () {
+
+}
+
 function showTab (t) {
   tabs.forEach(tab => {
     document.getElementById(tab).classList.add('hidden');
@@ -41,6 +63,32 @@ function showTab (t) {
       document.getElementById('recentFood').textContent = `${formatTime(f.Time)} - ${f.Name}`
     } else {
       document.getElementById('recentFood').textContent = `No record.`
+    }
+
+    let daily = findLatestGoal();
+    console.log(daily);
+    if (daily.length != 0) {
+      var goalList = ""
+      for (let item of daily) {
+        goalList += item + '\n'
+      }
+      document.getElementById('goal-list').textContent = `${goalList}`
+    } else {
+      document.getElementById('goal-list').textContent = `No goals yet.`
+    }
+
+    let fit = false;
+    if (fit) {
+
+    } else {
+      document.getElementById('recentFitness').textContent = 'No record.'
+    }
+
+    let sleep = false;
+    if (sleep) {
+
+    } else {
+      document.getElementById('recentSleep').textContent = 'No record.'
     }
   }
 }
