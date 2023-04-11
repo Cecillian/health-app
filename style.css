@@ -55,9 +55,9 @@ h1 {
     border: none;
     padding: 10px;
     background-color: #f1f1f1;
-    width: 30%;
+    width: 42%;
     height: 40%;
-    margin-left: auto;
+    margin-left: 0px;
     margin-right: auto;
     text-align: center;
     border-radius: 15px;
@@ -71,6 +71,7 @@ h1 {
 
 .dailyRemind {
     margin-left: 5%;
+    padding: 5px;
 }
 
 hr {
@@ -112,8 +113,9 @@ hr {
     padding-left: 50px;
 }
 
-#goal-list {
+#food-goals{
     color: black;
+    white-space: pre-wrap;
 }
 /* END OF HOME SCREEN */
 
@@ -250,6 +252,8 @@ button {
     margin: 50px auto;
     border-radius: 20px;
     padding: 20px;
+    padding-top: 5px;
+    margin-top: 1px;
 }
 
 .d-none {

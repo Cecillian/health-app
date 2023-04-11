@@ -65,18 +65,6 @@ function showTab (t) {
       document.getElementById('recentFood').textContent = `No record.`
     }
 
-    let daily = findLatestGoal();
-    console.log(daily);
-    if (daily.length != 0) {
-      var goalList = ""
-      for (let item of daily) {
-        goalList += item + '\n'
-      }
-      document.getElementById('goal-list').textContent = `${goalList}`
-    } else {
-      document.getElementById('goal-list').textContent = `No goals yet.`
-    }
-
     let fit = false;
     if (fit) {
 
@@ -89,6 +77,43 @@ function showTab (t) {
 
     } else {
       document.getElementById('recentSleep').textContent = 'No record.'
+    }
+
+    let daily = findLatestGoal();
+    console.log(daily);
+    if (daily.length != 0) {
+      var goalList = ""
+      for (let item of daily) {
+        goalList += item + '\n'
+      }
+      console.log(goalList);
+      document.getElementById('food-goals').textContent = `${goalList}`
+    } else {
+      document.getElementById('food-goals').textContent = `No goals yet.`
+    }
+
+    let dailyFitness = []
+    if (dailyFitness.length != 0) {
+      var goalList = ""
+      for (let item of dailyFitness) {
+        goalList += item + '\n'
+      }
+      console.log(goalList);
+      document.getElementById('fitness-goals').textContent = `${goalList}`
+    } else {
+      document.getElementById('fitness-goals').textContent = `No goals yet.`
+    }
+
+    let dailySleep = []
+    if (dailySleep.length != 0) {
+      var goalList = ""
+      for (let item of dailySleep) {
+        goalList += item + '\n'
+      }
+      console.log(goalList);
+      document.getElementById('sleep-goals').textContent = `${goalList}`
+    } else {
+      document.getElementById('sleep-goals').textContent = `No goals yet.`
     }
   }
 }
