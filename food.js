@@ -33,7 +33,11 @@ function formatDate (date) {
 function formatTime (time) {
   let [hh, mm] = time.split(':').map(v => Number(v));
   if (hh > 12) {
-    return `${hh - 12}: ${mm} PM`;
+    if (mm < 10){
+      return `${hh - 12}: 0${mm} PM`;
+    }else{
+      return `${hh - 12}: ${mm} PM`;
+    }
   }
   return `${hh}: ${mm} AM`;
 }
