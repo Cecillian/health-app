@@ -286,6 +286,10 @@ button {
 #fitness {
     padding: 0;
 }
+
+.exercises {
+    flex: 1;
+}
 /* END OF FITNESS SCREEN */
 
 /* #4 SLEEP SCREEN */
