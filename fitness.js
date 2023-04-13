@@ -33,9 +33,30 @@ function formatDate (date) {
 function formatTime (time) {
   let [hh, mm] = time.split(':').map(v => Number(v));
   if (hh > 12) {
-    return `${hh - 12}: ${mm} PM`;
+    if (mm < 10){
+      return `${hh - 12}: 0${mm} PM`;
+    }else{
+      return `${hh - 12}: ${mm} PM`;
+    }
+  }else if(hh == 0) {
+    if (mm < 10) {
+      return `${hh + 12}: 0${mm} AM`;
+    } else {
+      return `${hh + 12}: ${mm} AM`;
+    }
+  }else if(hh == 12){
+    if (mm < 10){
+      return `${hh}: 0${mm} PM`;
+    }else{
+      return `${hh}: ${mm} PM`;
+    }
+  }else{
+    if (mm < 10){
+      return `${hh}: 0${mm} AM`;
+    }else{
+      return `${hh}: ${mm} AM`;
+    }
   }
-  return `${hh}: ${mm} AM`;
 }
 
 function renderGoals () {
